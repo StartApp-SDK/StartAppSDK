@@ -3,7 +3,7 @@
 //  StartAppAdSDK
 //
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 3.7.0
+//  SDK version 3.7.1
 
 #import <Foundation/Foundation.h>
 
