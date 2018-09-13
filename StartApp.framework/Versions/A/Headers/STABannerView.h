@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 3.8.1
+//  SDK version 3.9.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
