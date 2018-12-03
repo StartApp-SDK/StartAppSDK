@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'StartAppSDK'
-  s.version                 = '3.10.1'
+  s.version                 = '3.10.2'
   s.summary                 = 'StartApp SDK for mobile advertising'
 
   s.description             = <<-DESC
@@ -20,15 +20,16 @@ Pod::Spec.new do |s|
   s.frameworks              =
                             'AdSupport',
                             'AVFoundation',
+                            'CoreAudio',
+                            'CoreFoundation',
                             'CoreGraphics',
                             'CoreMedia',
-                            'CoreAudio',
                             'CoreTelephony',
+                            'Foundation',
+                            'JavaScriptCore',
+                            'QuartzCore',
                             'StoreKit',
                             'SystemConfiguration',
-                            'QuartzCore',
-                            'Foundation',
-                            'CoreFoundation',
                             'UIKit',
                             'WebKit'
 end
