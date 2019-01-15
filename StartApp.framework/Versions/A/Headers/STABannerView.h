@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 3.10.2
+//  SDK version 3.11.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
@@ -13,6 +13,7 @@
 @class STABannerView;   // Forward decleration
 @protocol STABannerDelegateProtocol <NSObject>
 @optional
+- (void) bannerAdIsReadyToDisplay:(STABannerView*)banner;
 - (void) didDisplayBannerAd:(STABannerView*)banner;
 - (void) failedLoadBannerAd:(STABannerView*)banner withError:(NSError *)error;
 - (void) didClickBannerAd:(STABannerView*)banner;
@@ -27,15 +28,18 @@ typedef enum {
 
 @interface STABannerView : UIView <UIWebViewDelegate>
 
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate;
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate;
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate;
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate;
+- (id)initWithSize:(STABannerSize)size origin:(CGPoint)origin withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate;
+- (id)initWithSize:(STABannerSize)size origin:(CGPoint)origin adPreferences:(STAAdPreferences *)adPreferences withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate;
+- (id)initWithSize:(STABannerSize)size autoOrigin:(STAAdOrigin)origin withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate;
+- (id)initWithSize:(STABannerSize)size autoOrigin:(STAAdOrigin)origin adPreferences:(STAAdPreferences *)adPreferences withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate;
 
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag;
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag;
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag;
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag;
+- (id)initWithSize:(STABannerSize)size origin:(CGPoint)origin withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate withAdTag:(NSString*)adTag;
+- (id)initWithSize:(STABannerSize)size origin:(CGPoint)origin adPreferences:(STAAdPreferences *)adPreferences withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate withAdTag:(NSString*)adTag;
+- (id)initWithSize:(STABannerSize)size autoOrigin:(STAAdOrigin)origin withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate withAdTag:(NSString*)adTag;
+- (id)initWithSize:(STABannerSize)size autoOrigin:(STAAdOrigin)origin adPreferences:(STAAdPreferences *)adPreferences withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate withAdTag:(NSString*)adTag;
+
+
+- (void)loadAd;
 
 - (void)setSTABannerAdTag:(NSString *) adTag;
 
@@ -57,5 +61,16 @@ typedef enum {
 
 -(void)addSTABannerToCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath atIntexPathRow:(int)row repeatEach:(int)each;
 -(void)addSTABannerToCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath atIntexPathRow:(int)row;
+
+- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+
+- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
+
 
 @end

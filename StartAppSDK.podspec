@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'StartAppSDK'
-  s.version                 = '3.10.2'
+  s.version                 = '3.11.0'
   s.summary                 = 'StartApp SDK for mobile advertising'
 
   s.description             = <<-DESC

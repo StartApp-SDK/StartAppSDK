@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 9/15/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 3.10.2
+//  SDK version 3.11.0
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -25,7 +25,10 @@
 @property (nonatomic, strong) NSString *policyImageUrl;
 @property (nonatomic, strong) NSString *policyImagePath;
 
-- (void) sendImpression;
-- (void) sendClick;
+- (void)registerViewForImpressionAndClick:(UIView *)view;
+- (void)registerViewForImpression:(UIView *)view andViewsForClick:(NSArray<UIView *> *)clickableViews;
+
+- (void)sendImpression __deprecated_msg("Use registerViewForImpressionAndClick: or registerViewForImpression:andViewsForClick: instead for automatic impression and click tracking");
+- (void)sendClick __deprecated_msg("Use registerViewForImpressionAndClick: or registerViewForImpression:andViewsForClick: instead for automatic impression and click tracking");
 
 @end

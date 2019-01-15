@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 5/22/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 3.10.2
+//  SDK version 3.11.0
 
 #import <Foundation/Foundation.h>
 
@@ -18,3 +18,4 @@
 #import <StartApp/STABannerSize.h>
 #import <StartApp/STABannerView.h>
 #import <StartApp/STASplashPreferences.h>
+#import <StartApp/STAErrorCodes.h>
