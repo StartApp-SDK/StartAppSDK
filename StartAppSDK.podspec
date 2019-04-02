@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'StartAppSDK'
-  s.version                 = '3.11.0'
+  s.version                 = '3.12.0'
   s.summary                 = 'StartApp SDK for mobile advertising'
 
   s.description             = <<-DESC
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                                 DESC
                        
   s.platform                = :ios
-  s.ios.deployment_target   = '6.0'
+  s.ios.deployment_target   = '7.0'
   s.homepage                = 'https://github.com/StartApp-SDK/Documentation/wiki/iOS-InApp-Documentation'
   s.license                 = { :type => 'Commercial', :file => 'LICENSE' }
   s.author                  = { 'StartApp' => 'support@startapp.com' }
