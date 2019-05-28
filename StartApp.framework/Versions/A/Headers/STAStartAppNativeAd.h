@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 9/17/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 3.12.0
+//  SDK version 4.0.0
 
 
 #import <UIKit/UIKit.h>
@@ -30,7 +30,6 @@ typedef NS_ENUM(NSUInteger, STANativeAdVideoMode) {
 
 @interface STANativeAdPreferences : STAAdPreferences
 
-@property (nonatomic, assign) STANativeAdBitmapSize bitmapSize __deprecated_msg("Will be removed in one of next versions. Use primaryImageSize and secondaryImageSize instead.");
 @property (nonatomic, assign) STANativeAdBitmapSize primaryImageSize;
 @property (nonatomic, assign) STANativeAdBitmapSize secondaryImageSize;
 @property (nonatomic, assign) STANativeAdVideoMode videoMode;

@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 3.12.0
+//  SDK version 4.0.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
@@ -49,9 +49,6 @@ typedef enum {
 
 - (void)setAdPreferneces:(STAAdPreferences *)adPreferences;
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation __deprecated_msg("STABannerView handles rotations automatically");
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator __deprecated_msg("STABannerView handles rotations automatically");
-
 - (void)hideBanner;
 - (void)showBanner;
 - (BOOL)isVisible;
@@ -61,16 +58,5 @@ typedef enum {
 
 -(void)addSTABannerToCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath atIntexPathRow:(int)row repeatEach:(int)each;
 -(void)addSTABannerToCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath atIntexPathRow:(int)row;
-
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-- (id) initWithSize:(STABannerSize) size origin:(CGPoint) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-- (id) initWithSize:(STABannerSize) size autoOrigin:(STAAdOrigin) origin adPreferences: (STAAdPreferences *)adPreferences withView: (UIView*) view withDelegate:(id <STABannerDelegateProtocol> ) bannerDelegate withAdTag:(NSString*)adTag __deprecated_msg("withView param is deprecated. STABannerView's superview will be used instead");
-
 
 @end
