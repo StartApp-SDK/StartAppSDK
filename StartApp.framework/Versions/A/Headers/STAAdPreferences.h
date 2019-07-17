@@ -3,7 +3,7 @@
 //  StartAppAdSDK
 //
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.0.0
+//  SDK version 4.1.0
 
 @interface STAUserLocation : NSObject
 @property  double latitude;
