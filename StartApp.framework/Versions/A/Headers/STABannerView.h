@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.2.1
+//  SDK version 4.3.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
@@ -26,7 +26,7 @@ typedef enum {
     STAAdOrigin_Bottom = 2,
 } STAAdOrigin;
 
-@interface STABannerView : UIView <UIWebViewDelegate>
+@interface STABannerView : UIView
 
 - (id)initWithSize:(STABannerSize)size origin:(CGPoint)origin withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate;
 - (id)initWithSize:(STABannerSize)size origin:(CGPoint)origin adPreferences:(STAAdPreferences *)adPreferences withDelegate:(id<STABannerDelegateProtocol>)bannerDelegate;
