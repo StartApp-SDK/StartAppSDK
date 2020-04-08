@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 9/17/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.4.3
+//  SDK version 4.5.0
 
 
 #import <UIKit/UIKit.h>
@@ -47,11 +47,10 @@ typedef NS_ENUM(NSUInteger, STANativeAdVideoMode) {
 @property (nonatomic, readonly) NSMutableArray *adsDetails;
 
 - (void)loadAd;
-- (void)loadAdWithDelegate:(id<STADelegateProtocol>) delegate;
-- (void)loadAdWithNativeAdPreferences:(STANativeAdPreferences*) nativeAdPrefs;
-- (void)loadAdWithDelegate:(id<STADelegateProtocol>) delegate withNativeAdPreferences:(STANativeAdPreferences*) nativeAdPrefs;
+- (void)loadAdWithDelegate:(id<STADelegateProtocol>)delegate;
+- (void)loadAdWithNativeAdPreferences:(STANativeAdPreferences *)nativeAdPrefs;
+- (void)loadAdWithDelegate:(id<STADelegateProtocol>)delegate withNativeAdPreferences:(STANativeAdPreferences *)nativeAdPrefs;
 
 - (void)setAdTag:(NSString *)adTag;
-
 
 @end

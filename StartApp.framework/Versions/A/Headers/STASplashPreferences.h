@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 6/25/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.4.3
+//  SDK version 4.5.0
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -43,26 +43,26 @@ typedef enum {
 @interface STASplashPreferences : NSObject
 
 // Splash Type
-@property (nonatomic) STASplashMode splashMode;
+@property (nonatomic, assign) STASplashMode splashMode;
 
 // User Defined splash prefreneces
 @property (nonatomic, strong) NSString *splashUserDefinedImageName;
 
 // Template splash prefreneces
-@property (nonatomic) STASplashTemplateTheme splashTemplateTheme;
+@property (nonatomic, assign) STASplashTemplateTheme splashTemplateTheme;
 @property (nonatomic, strong) NSString *splashTemplateIconImageName;
 @property (nonatomic, strong) NSString *splashTemplateAppName;
 
 // Loading Indicator
-@property (nonatomic) BOOL isSplashLoadingIndicatorEnabled;
-@property (nonatomic) STASplashLoadingIndicatorType splashLoadingIndicatorType;
-@property (nonatomic) CGPoint splashLoadingIndicatorCenterPoint;
+@property (nonatomic, assign) BOOL isSplashLoadingIndicatorEnabled;
+@property (nonatomic, assign) STASplashLoadingIndicatorType splashLoadingIndicatorType;
+@property (nonatomic, assign) CGPoint splashLoadingIndicatorCenterPoint;
 
 // Splash Orientation
-@property (nonatomic) BOOL isLandscape;
+@property (nonatomic, assign) BOOL isLandscape;
 
 // Other Preferences
-@property (nonatomic) STASplashMinTime splashMinTime;
-@property (nonatomic) STASplashAdDisplayTime splashAdDisplayTime;
+@property (nonatomic, assign) STASplashMinTime splashMinTime;
+@property (nonatomic, assign) STASplashAdDisplayTime splashAdDisplayTime;
 
 @end
