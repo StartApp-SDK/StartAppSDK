@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'StartAppSDK'
-  s.version                 = '4.5.0'
+  s.version                 = '4.6.0'
   s.summary                 = 'StartApp SDK for mobile advertising'
 
   s.description             = <<-DESC
@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.source                  = { :git => 'https://github.com/StartApp-SDK/StartAppSDK.git', :tag => s.version.to_s }
   
   s.ios.vendored_frameworks = 'StartApp.framework'
-  s.resource_bundles        = {'StartAppSDK' => ['StartApp.bundle']}
 
   s.frameworks              =
                             'AdSupport',
+                            'AppTrackingTransparency',
                             'AVFoundation',
                             'CoreAudio',
                             'CoreFoundation',
@@ -32,4 +32,8 @@ Pod::Spec.new do |s|
                             'SystemConfiguration',
                             'UIKit',
                             'WebKit'
+  s.libraries               = 'z'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

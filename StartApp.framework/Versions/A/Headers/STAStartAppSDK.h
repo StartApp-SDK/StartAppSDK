@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.5.0
+//  SDK version 4.6.0
 
 #import <Foundation/Foundation.h>
 #import "STAStartAppAd.h"
@@ -38,7 +38,7 @@ typedef enum {
 @property (nonatomic, strong) STASDKPreferences *preferences;
 
 @property (nonatomic, readonly) NSString *version;
-@property (nonatomic, readonly) long buildNumber;
+@property (nonatomic, readonly) long buildNumber DEPRECATED_ATTRIBUTE;
 
 @property (nonatomic, assign) BOOL isUnityEnvironment;
 @property (nonatomic, assign) BOOL isCoronaEnvironment;
@@ -46,6 +46,8 @@ typedef enum {
 @property (nonatomic, assign) BOOL isAdMobMediationEnvironment;
 @property (nonatomic, assign) BOOL isMoPubMediationEnvironment;
 @property (nonatomic, assign) BOOL isSwiftEnvironment;
+@property (nonatomic, strong) NSString *adMobAdapterVersion;
+@property (nonatomic, strong) NSString *moPubAdapterVersion;
 
 @property (nonatomic, assign) BOOL returnAdEnabled; //Default is YES
 @property (nonatomic, assign) BOOL consentDialogEnabled; //Default is YES
@@ -53,9 +55,6 @@ typedef enum {
 
 + (STAStartAppSDK *)sharedInstance;
 - (void)SDKInitialize:(NSString *)devID andAppID:(NSString *)appID;
-
-// Disable Return Ad
-- (void)disableReturnAd __deprecated_msg("Use returnAdEnabled property");
 
 // Initialize Splash Ad
 - (void)showSplashAd;
