@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.6.0
+//  SDK version 4.6.1
 
 #import <Foundation/Foundation.h>
 #import "STAStartAppAd.h"
