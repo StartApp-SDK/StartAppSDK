@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.6.1
+//  SDK version 4.6.2
 
 #import <Foundation/Foundation.h>
 #import "STAStartAppAd.h"
@@ -38,16 +38,15 @@ typedef enum {
 @property (nonatomic, strong) STASDKPreferences *preferences;
 
 @property (nonatomic, readonly) NSString *version;
-@property (nonatomic, readonly) long buildNumber DEPRECATED_ATTRIBUTE;
 
-@property (nonatomic, assign) BOOL isUnityEnvironment;
-@property (nonatomic, assign) BOOL isCoronaEnvironment;
-@property (nonatomic, assign) BOOL isCocos2DXEnvironment;
-@property (nonatomic, assign) BOOL isAdMobMediationEnvironment;
-@property (nonatomic, assign) BOOL isMoPubMediationEnvironment;
-@property (nonatomic, assign) BOOL isSwiftEnvironment;
-@property (nonatomic, strong) NSString *adMobAdapterVersion;
-@property (nonatomic, strong) NSString *moPubAdapterVersion;
+@property (nonatomic, assign) BOOL isUnityEnvironment DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, assign) BOOL isCoronaEnvironment DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, assign) BOOL isCocos2DXEnvironment DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, assign) BOOL isAdMobMediationEnvironment DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, assign) BOOL isMoPubMediationEnvironment DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, assign) BOOL isSwiftEnvironment DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, strong) NSString *adMobAdapterVersion DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
+@property (nonatomic, strong) NSString *moPubAdapterVersion DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
 
 @property (nonatomic, assign) BOOL returnAdEnabled; //Default is YES
 @property (nonatomic, assign) BOOL consentDialogEnabled; //Default is YES
@@ -70,7 +69,10 @@ typedef enum {
 
 - (void)setUserConsent:(BOOL)consent forConsentType:(NSString *)consentType withTimestamp:(long)ts;
 
-//Unity methods
+// Wrappers
+- (void)addWrapperWithName:(NSString *)wrapperName version:(NSString *)versionString;
+
+// Unity methods
 - (void)unitySDKInitialize;
 - (void)unityAppWillEnterForeground;
 - (void)unityAppDidEnterBackground;
