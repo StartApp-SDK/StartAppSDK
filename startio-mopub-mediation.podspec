@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "StartioMopubMediation"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of StartioMopubMediation."
+  spec.name         = "startio-mopub-mediation"
+  spec.version      = "1.0.0"
+  spec.summary      = "Start.io <-> MoPub iOS Mediation Adapter."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  Using this adapter you will be able to intergate Start.io SDK via MoPub mediation
                    DESC
 
   spec.homepage     = "https://www.start.io"
@@ -52,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "startio" => "startappdevelopers@gmail.com" }
+  spec.author             = { "iOS Dev" => "iosdev@startapp.com" }
   # Or just: spec.author    = "tovchenko"
   # spec.authors            = { "tovchenko" => "taras.tovchenko@startapp.com" }
   # spec.social_media_url   = "https://twitter.com/tovchenko"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/StartApp-SDK/ios-mopub-mediation.git" }
+  spec.source       = { :git => "https://github.com/StartApp-SDK/ios-mopub-mediation.git", :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "StartioMopubMediation/**/*.{h,m}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -130,8 +131,14 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
+  spec.static_framework = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  spec.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' } 
+  # spec.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
   spec.dependency "mopub-ios-sdk", "~> 5.16"
+  spec.dependency "StartAppSDK", "~> 4.6.3"
 
 end
