@@ -46,7 +46,7 @@ NSString* const kStartioNetworkId = @"Startio";
 }
 
 - (NSString*)adapterVersion {
-    return @"1.0.0.0";
+    return [STAStartAppSDK.sharedInstance.version stringByAppendingString:@".0"];
 }
 
 - (nullable NSString*)biddingToken {

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4905B197261E057800C94917 /* libStartApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4905B196261E057800C94917 /* libStartApp.a */; };
-		4905B19A261E059D00C94917 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4905B199261E059300C94917 /* libz.tbd */; };
 		4921E9DB2613983900DFCFBD /* StartioMopubMediation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4921E9D92613983900DFCFBD /* StartioMopubMediation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4921E9E626139C2000DFCFBD /* StartioMopubAdapterConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4921E9E426139C2000DFCFBD /* StartioMopubAdapterConfiguration.h */; };
 		4921E9E726139C2000DFCFBD /* StartioMopubAdapterConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4921E9E526139C2000DFCFBD /* StartioMopubAdapterConfiguration.m */; };
@@ -57,8 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4905B197261E057800C94917 /* libStartApp.a in Frameworks */,
-				4905B19A261E059D00C94917 /* libz.tbd in Frameworks */,
 				84C3998D4AE0347895BC10EA /* Pods_StartioMopubMediation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +377,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StartioMopubMediation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +403,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StartioMopubMediation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
