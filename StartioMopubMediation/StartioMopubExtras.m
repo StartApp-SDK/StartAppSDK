@@ -36,10 +36,6 @@ static STANativeAdBitmapSize stringToBitmapSize(NSString* format) {
         return SIZE_340X340;
     } else if ([format isEqualToString:@"SIZE1200X628"]) {
         return SIZE_1200X628;
-    } else if ([format isEqualToString:@"SIZE320X480"]) {
-        return SIZE_320X480;
-    } else if ([format isEqualToString:@"SIZE480X320"]) {
-        return SIZE_480X320;
     }
     
     return SIZE_150X150;

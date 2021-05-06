@@ -33,7 +33,7 @@ Ad Type | Custom event class | Custom event data | Options
 Interstitial | StartioMopubFullscreenAdapter | {"startioAppId":"your_id_from_portal", "adTag":"any_your_tag", "interstitialMode":"OVERLAY", "minCPM":0.02} | interstitialMode can be OVERLAY or VIDEO
 Banner/Medium Rectangle | StartioMopubInlineAdapter | {"startioAppId":"your_id_from_portal", "adTag":"any_your_tag", "minCPM":0.02} | 
 Rewarded | StartioMopubRewardedAdapter | {"startioAppId":"your_id_from_portal", "adTag":"any_your_tag", "minCPM":0.02} |
-Native | StartioMopubNativeCustomEvent | {"startioAppId":"your_id_from_portal", "adTag":"any_your_tag", "minCPM":0.02, "nativeImageSize":"SIZE150X150", "nativeSecondaryImageSize":"SIZE100X100"} | nativeImageSize and nativeSecondaryImageSize can be any of SIZE72X72, SIZE100X100, SIZE150X150, SIZE340X340, SIZE1200X628, SIZE320X480, SIZE480X320 and don't forget to add StartioMopubNativeCustomEvent string to your renderer settings in the field ".supportedCustomEvents" | 
+Native | StartioMopubNativeCustomEvent | {"startioAppId":"your_id_from_portal", "adTag":"any_your_tag", "minCPM":0.02, "nativeImageSize":"SIZE150X150", "nativeSecondaryImageSize":"SIZE100X100"} | nativeImageSize and nativeSecondaryImageSize can be any of SIZE72X72, SIZE100X100, SIZE150X150, SIZE340X340, SIZE1200X628(for main image only) and don't forget to add StartioMopubNativeCustomEvent string to your renderer settings in the field ".supportedCustomEvents" | 
 
 All parameters in the "custom event data" field are optional except the "startioAppId" which you must provide in any case.
 You can also pass these parameters from your code using mopub's "localExtras" field. But be aware that every parameter from "custom event data" will override same parameter which is set locally
