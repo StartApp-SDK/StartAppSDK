@@ -39,7 +39,7 @@ All parameters in the "custom event data" field are optional except the "startio
 You can also pass these parameters from your code using mopub's "localExtras" field. But be aware that every parameter from "custom event data" will override same parameter which is set locally
 
 Example:
-```
+```objective-c
 self.interstitial.localExtras = @{
     @"adTag": @"myCustomTag",
     @"minCPM": @0.01,
