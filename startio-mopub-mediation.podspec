@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "startio-mopub-mediation"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "Start.io <-> MoPub iOS Mediation Adapter."
 
   spec.description  = <<-DESC
@@ -28,6 +28,6 @@ Pod::Spec.new do |spec|
   # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   spec.dependency "mopub-ios-sdk", "~> 5.16"
-  spec.dependency "StartAppSDK", "~> 4.6.3"
+  spec.dependency "StartAppSDK", "~> 4.6.4"
 
 end
