@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'StartAppSDK'
-  s.version                 = '4.7.3'
+  s.version                 = '4.8.0'
   s.summary                 = 'StartApp SDK for mobile advertising'
 
   s.description             = <<-DESC
@@ -8,33 +8,11 @@ Pod::Spec.new do |s|
                                 DESC
                        
   s.platform                = :ios
-  s.ios.deployment_target   = '8.0'
+  s.ios.deployment_target   = '9.0'
   s.homepage                = 'https://support.start.io/hc/en-us/articles/360006012653-IOS-Standard'
   s.license                 = { :type => 'Commercial', :file => 'LICENSE' }
   s.author                  = { 'StartApp' => 'support@startapp.com' }
   s.source                  = { :git => 'https://github.com/StartApp-SDK/StartAppSDK.git', :tag => s.version.to_s }
   
-  s.ios.vendored_frameworks = 'StartApp.framework'
-
-  s.frameworks              =
-                            'AdSupport',
-                            'AppTrackingTransparency',
-                            'AVFoundation',
-                            'CoreAudio',
-                            'CoreFoundation',
-                            'CoreGraphics',
-                            'CoreMedia',
-                            'CoreTelephony',
-                            'Foundation',
-                            'JavaScriptCore',
-                            'NetworkExtension',
-                            'QuartzCore',
-                            'StoreKit',
-                            'SystemConfiguration',
-                            'UIKit',
-                            'WebKit'
-  s.libraries               = 'z'
-  
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.ios.vendored_frameworks = 'StartApp.xcframework'
 end
