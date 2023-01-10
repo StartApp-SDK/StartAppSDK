@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.8.0
+//  SDK version 4.9.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion This method is called when banner sends impression. It happens after banner first appears on screen and after every refresh in case if all required conditions were met for impression to be sent.
  * @param banner Banner instance that called this method
  */
-- (void)didSendImpressionForBannerAd:(STABannerViewBase *)banner;
+- (void) didSendImpressionForBannerAd:(STABannerViewBase *)banner;
 
 /*!
  * @brief Notifies delegate that banner failed to load ad

@@ -30,6 +30,8 @@ framework module StartApp {
   header "STANativeAdDetails.h"
   header "STABannerSize.h"
   header "STABannerView.h"
+  header "STAInlineView.h"
+  header "STABannerLoader.h"
   header "STASplashPreferences.h"
   header "STAErrorCodes.h"
 }
