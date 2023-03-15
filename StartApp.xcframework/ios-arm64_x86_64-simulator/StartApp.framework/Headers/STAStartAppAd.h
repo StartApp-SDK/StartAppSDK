@@ -3,7 +3,7 @@
 //  StartAppAdSDK
 //
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.9.0
+//  SDK version 4.9.1
 
 #import <UIKit/UIKit.h>
 #import "STAAbstractAd.h"

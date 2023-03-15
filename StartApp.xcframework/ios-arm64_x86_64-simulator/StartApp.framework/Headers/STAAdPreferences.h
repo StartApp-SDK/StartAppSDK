@@ -3,7 +3,7 @@
 //  StartAppAdSDK
 //
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.9.0
+//  SDK version 4.9.1
 
 @interface STAUserLocation : NSObject
 @property double latitude;
@@ -21,6 +21,10 @@
 /// Alternative app id
 @property (nonatomic, copy) NSString* customProductId;
 
+/// Identifier of placement of the ad.
+///
+/// The ad which is presented to the user under the same circumstances (at the same place of the application) should have the same and unique placementId
+@property (nonatomic, copy) NSString* placementId;
 /*!
  * @brief Creates STAAdPreferences with latitude and longitude
  * @discussion Call this method to create STAAdPreferences with user location: latitude and longitude.
