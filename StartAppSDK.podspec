@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'StartAppSDK'
-  s.version                 = '4.9.1'
+  s.version                 = '4.9.2'
   s.summary                 = 'StartApp SDK for mobile advertising'
 
   s.description             = <<-DESC
@@ -15,4 +15,23 @@ Pod::Spec.new do |s|
   s.source                  = { :git => 'https://github.com/StartApp-SDK/StartAppSDK.git', :tag => s.version.to_s }
   
   s.ios.vendored_frameworks = 'StartApp.xcframework'
+  s.frameworks              =
+                            'AdSupport',
+                            'AppTrackingTransparency',
+                            'AVFoundation',
+                            'CoreAudio',
+                            'CoreFoundation',
+                            'CoreGraphics',
+                            'CoreMedia',
+                            'CoreTelephony',
+                            'Foundation',
+                            'JavaScriptCore',
+                            'NetworkExtension',
+                            'QuartzCore',
+                            'StoreKit',
+                            'SystemConfiguration',
+                            'UIKit',
+                            'WebKit'
+  s.libraries               = 'z'
+
 end
