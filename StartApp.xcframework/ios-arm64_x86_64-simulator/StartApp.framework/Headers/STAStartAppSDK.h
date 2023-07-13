@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.9.2
+//  SDK version 4.10.0
 
 #import <Foundation/Foundation.h>
 #import "STAStartAppAd.h"
@@ -166,12 +166,20 @@ typedef enum {
 - (void)setUserConsent:(BOOL)consent forConsentType:(NSString *)consentType withTimestamp:(long)ts;
 
 /*!
- * @brief Notifies SDK that application uses wrappers, (e.g. Unity, AdMob, MoPub or others)
+ * @brief Notifies SDK that application uses wrappers (e.g. Unity)
  * @discussion Use this method to notify SDK that you use wrappers.
- * @param wrapperName Short name of the wrapper (e.g. "Unity", "AdMob", "MoPub" or others)
+ * @param wrapperName Short name of the wrapper (e.g. "Unity")
  * @param versionString Wrapper version string
  */
 - (void)addWrapperWithName:(NSString *)wrapperName version:(NSString *)versionString;
+
+/*!
+ * @brief Notifies SDK that application uses mediation (e.g. AdMob, MoPub, IronSource, AppLovin MAX or others). Also enables mediation mode.
+ * @discussion Use this method to notify SDK that you use mediation and to enable mediation mode(to disable return ad and consent dialog).
+ * @param mediationName Short name of the mediation (e.g. "Unity", "AdMob", "MoPub", "IronSource", "AppLovin" or others)
+ * @param versionString Adapter version string
+ */
+- (void)enableMediationModeFor:(NSString *)mediationName version:(NSString *)versionString;
 
 // Unity methods
 - (void)unitySDKInitialize;
