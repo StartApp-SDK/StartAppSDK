@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.10.1
+//  SDK version 4.10.2
 
 
 #import "STABannerViewBase.h"
