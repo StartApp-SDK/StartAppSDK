@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.10.3
+//  SDK version 4.10.4
 
 #import <Foundation/Foundation.h>
 #import "STAStartAppAd.h"
@@ -75,7 +75,7 @@ typedef enum {
 @property (nonatomic, strong) NSString *moPubAdapterVersion DEPRECATED_MSG_ATTRIBUTE("Will be removed in next version. Use addWrapperWithName:version: instead");
 
 /// Use this flag to turn return ad on or off. Turned on by default.
-@property (nonatomic, assign) BOOL returnAdEnabled;
+@property (nonatomic, assign) BOOL returnAdEnabled __deprecated_msg("Return ad is deprecated. This property will always return NO. Setter will do nothing. This will be removed in future releases");
 
 /// Use this flag to turn embeded consent dialog on or off. Turned on by default.
 @property (nonatomic, assign) BOOL consentDialogEnabled;
@@ -107,21 +107,21 @@ typedef enum {
  * @brief Displays a splash ad with default splash preferences settings
  * @discussion Call this method to display a splash ad with default splash preferences settings.
  */
-- (void)showSplashAd;
+- (void)showSplashAd __deprecated_msg("Splash ad is deprecated. This function will do nothing and will be removed in future releases");
 
 /*!
  * @brief Displays a splash ad with default splash preferences and calls corresponding delegate methods
  * @discussion Call this method to display a splash ad with default splash preferences and pass delegate to be notified about splash ad events.
  * @param delegate Delegate object that will receive splash ad callbacks
  */
-- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate;
+- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate __deprecated_msg("Splash ad is deprecated. This function will do nothing and will be removed in future releases");
 
 /*!
  * @brief Displays a splash ad with specific splash preferences
  * @discussion Call this method to display a splash ad with specific splash preferences.
  * @param splashPreferences Splash preferences to customize splash ad representation
  */
-- (void)showSplashAdWithPreferences:(STASplashPreferences *)splashPreferences;
+- (void)showSplashAdWithPreferences:(STASplashPreferences *)splashPreferences __deprecated_msg("Splash ad is deprecated. This function will do nothing and will be removed in future releases");
 
 /*!
  * @brief Displays a splash ad with specific splash preferences and calls corresponding delegate methods
@@ -129,7 +129,7 @@ typedef enum {
  * @param delegate Delegate object that will receive splash ad callbacks
  * @param splashPreferences Splash preferences to customize splash ad representation
  */
-- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate withPreferences:(STASplashPreferences *)splashPreferences;
+- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate withPreferences:(STASplashPreferences *)splashPreferences __deprecated_msg("Splash ad is deprecated. This function will do nothing and will be removed in future releases");
 
 /*!
  * @brief Displays a splash ad with specific splash preferences, ad preferences and calls corresponding delegate methods
@@ -138,7 +138,7 @@ typedef enum {
  * @param adPrefs Custom ad preferences
  * @param splashPreferences Splash preferences to customize splash ad representation
  */
-- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs withPreferences:(STASplashPreferences *)splashPreferences;
+- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs withPreferences:(STASplashPreferences *)splashPreferences __deprecated_msg("Splash ad is deprecated. This function will do nothing and will be removed in future releases");
 
 /*!
  * @brief Displays a splash ad with specific splash preferences, ad preferences, ad tag and calls corresponding delegate methods
@@ -148,7 +148,7 @@ typedef enum {
  * @param splashPreferences Splash preferences to customize splash ad representation
  * @param adTag Ad tag is a unique string that is sent within impression
  */
-- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs withPreferences:(STASplashPreferences *)splashPreferences withAdTag:(NSString *)adTag __deprecated_msg("adTag on impression is deprecated. Please provide adTag for ad request in STAAdPreferences object via showSplashAdWithDelegate:withAdPreferences:withPreferences: method.");;
+- (void)showSplashAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs withPreferences:(STASplashPreferences *)splashPreferences withAdTag:(NSString *)adTag __deprecated_msg("Splash ad is deprecated. This function will do nothing and will be removed in future releases");
 
 
 
