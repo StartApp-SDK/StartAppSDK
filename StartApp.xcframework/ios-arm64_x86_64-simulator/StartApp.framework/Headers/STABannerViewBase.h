@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.10.5
+//  SDK version 4.11.0
 
 #import <UIKit/UIKit.h>
 #import "STABannerSize.h"
@@ -92,6 +92,17 @@ typedef enum {
  * @return STABannerView instance
  */
 - (nullable id)initWithSize:(STABannerSize)size origin:(CGPoint)origin adPreferences:(nullable STAAdPreferences *)adPreferences withDelegate:(nullable id<STABannerDelegateProtocol>)bannerDelegate;
+
+/*!
+ * @brief Creates banner view from ADM at fixed origin, with ad preferences and delegate
+ * @discussion Call this method to create banner view from ADM at fixed origin with custom ad preferences. Pass delegate to be notified about banner view events.
+ * @param origin Fixed origin
+ * @param adPreferences Custom ad preferences
+ * @param bannerDelegate Delegate object that will receive banner view callbacks
+ * @param adm Ad markup produced by Start.io for bidding flow
+ * @return STABannerView instance
+ */
+- (nullable id)initWithOrigin:(CGPoint)origin adPreferences:(nullable STAAdPreferences *)adPreferences withDelegate:(nullable id<STABannerDelegateProtocol>)bannerDelegate adm:(NSString *)adm;
 
 /*!
  * @brief Creates banner view for specified size at fixed origin, with delegate and ad tag

@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 01/25/22.
 //  Copyright (c) 2022 StartApp. All rights reserved.
-//  SDK version 4.10.5
+//  SDK version 4.11.0
 
 #import <Foundation/Foundation.h>
 #import "STABannerSize.h"
@@ -35,7 +35,17 @@ typedef void (^STABannerRequestCompletion)(STABannerViewCreator * _Nullable, NSE
  * @return STABannerLoader instance
  */
 - (nonnull instancetype)initWithSize:(STABannerSize)size
-                        adPreferences:(nullable STAAdPreferences *)adPreferences;
+                       adPreferences:(nullable STAAdPreferences *)adPreferences;
+
+/*!
+ * @brief Creates banner loader with ad preferences and ADM
+ * @discussion Call this method to create banner loader with custom ad preferences and ADM
+ * @param adPreferences Custom ad preferences
+ * @param adm Ad markup produced by Start.io for bidding flow
+ * @return STABannerLoader instance
+ */
+- (nonnull instancetype)initWithAdPreferences:(nullable STAAdPreferences *)adPreferences
+                                          adm:(nullable NSString *)adm;
 
 /*!
  * @brief Loads banner ad

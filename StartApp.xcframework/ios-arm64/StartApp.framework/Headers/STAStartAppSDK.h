@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.10.5
+//  SDK version 4.11.0
 
 #import <Foundation/Foundation.h>
 #import "STAStartAppAd.h"
@@ -82,6 +82,8 @@ typedef enum {
 
 /// This flag allows you to receive test campaigns to test your integrations. Shoud be turned off before submitting to AppStore. Turned off by default.
 @property (nonatomic, assign) BOOL testAdsEnabled;
+
+@property (nonatomic, readonly) NSString *biddingToken;
 
 /*!
  * @brief STAStartAppSDK singleton method

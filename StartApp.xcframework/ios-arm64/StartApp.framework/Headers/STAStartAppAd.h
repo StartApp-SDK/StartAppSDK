@@ -3,7 +3,7 @@
 //  StartAppAdSDK
 //
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.10.5
+//  SDK version 4.11.0
 
 #import <UIKit/UIKit.h>
 #import "STAAbstractAd.h"
@@ -33,6 +33,15 @@
  * @param adPrefs Custom ad preferences
  */
 - (void)loadRewardedVideoAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs;
+
+/*!
+ * @brief Creates rewarded video ad from ADM with delegate and specific ad preferences
+ * @discussion Call this method to create rewarded video ad from ADM with specific ad preferences. Pass delegate to be notified when ad is loaded or any other events.
+ * @param delegate Delegate object for ad events callbacks
+ * @param adPrefs Custom ad preferences
+ * @param adm Ad markup produced by Start.io for bidding flow
+ */
+- (void)loadRewardedVideoAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs adm:(NSString *)adm;
 
 /*!
  * @brief Loads video ad
@@ -89,6 +98,15 @@
  * @param adPrefs Custom ad preferences
  */
 - (void)loadAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs;
+
+/*!
+ * @brief Creates interstitial ad from ADM with delegate and specific ad preferences
+ * @discussion Call this method to create interstitial ad from ADM with specific ad preferences. Pass delegate to be notified when ad is loaded or any other events.
+ * @param delegate Delegate object for ad events callbacks
+ * @param adPrefs Custom ad preferences
+ * @param adm Ad markup produced by Start.io for bidding flow
+ */
+- (void)loadAdWithDelegate:(id<STADelegateProtocol>)delegate withAdPreferences:(STAAdPreferences *)adPrefs adm:(NSString *)adm;
 
 /*!
  * @brief Shows loaded ad

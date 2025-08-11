@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.10.5
+//  SDK version 4.11.0
 
 
 #import "STABannerViewBase.h"
@@ -29,6 +29,17 @@ NS_ASSUME_NONNULL_BEGIN
  * @return STABannerView instance
  */
 - (nullable id)initWithSize:(STABannerSize)size autoOrigin:(STAAdOrigin)autoOrigin adPreferences:(nullable STAAdPreferences *)adPreferences withDelegate:(nullable id<STABannerDelegateProtocol>)bannerDelegate;
+
+/*!
+ * @brief Creates banner view from ADM at auto origin with ad preferences and delegate
+ * @discussion Call this method to create banner view from ADM at auto origin with custom ad preferences. Pass delegate to be notified about banner view events.
+ * @param autoOrigin Auto origin
+ * @param adPreferences Custom ad preferences
+ * @param bannerDelegate Delegate object that will receive banner view callbacks
+ * @param adm Ad markup produced by Start.io for bidding flow
+ * @return STABannerView instance
+ */
+- (nullable id)initWithAutoOrigin:(STAAdOrigin)autoOrigin adPreferences:(nullable STAAdPreferences *)adPreferences withDelegate:(nullable id<STABannerDelegateProtocol>)bannerDelegate adm:(NSString *)adm;
 
 /*!
  * @brief Creates banner view for specified size at auto origin, with delegate and ad tag

@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 9/17/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.10.5
+//  SDK version 4.11.0
 
 
 #import <UIKit/UIKit.h>
@@ -80,6 +80,15 @@ typedef NS_ENUM(NSUInteger, STANativeAdVideoMode) {
  * @param nativeAdPrefs Specific native ad preferences
  */
 - (void)loadAdWithDelegate:(id<STADelegateProtocol>)delegate withNativeAdPreferences:(STANativeAdPreferences *)nativeAdPrefs;
+
+/*!
+ * @brief Creates native ad details from ADM with specific native ad preferences and delegate
+ * @discussion Call this method to create native ad details from ADM with specific ad preferences. Pass delegate to be notified when ad is loaded or any other events.
+ * @param delegate Delegate object for ad events callbacks
+ * @param nativeAdPrefs Specific native ad preferences
+ * @param adm Ad markup produced by Start.io for bidding flow
+ */
+- (void)loadAdWithDelegate:(id<STADelegateProtocol>)delegate nativeAdPreferences:(STANativeAdPreferences *)nativeAdPrefs adm:(NSString *)adm;
 
 /*!
  * @brief Sets native ad tag
