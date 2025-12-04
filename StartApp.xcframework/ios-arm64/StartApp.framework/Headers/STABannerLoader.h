@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 01/25/22.
 //  Copyright (c) 2022 StartApp. All rights reserved.
-//  SDK version 4.11.0
+//  SDK version 4.12.0
 
 #import <Foundation/Foundation.h>
 #import "STABannerSize.h"
