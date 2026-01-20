@@ -3,7 +3,7 @@
 //  StartAppAdSDK
 //
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.12.0
+//  SDK version 4.13.0
 
 typedef NS_ENUM(NSUInteger, STAError) {
     ///Unexpected error occured
