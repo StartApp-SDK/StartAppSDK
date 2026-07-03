@@ -4,11 +4,11 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.13.1
+//  SDK version 4.14.0
 
 #import <UIKit/UIKit.h>
-#import "STABannerSize.h"
-#import "STAAdPreferences.h"
+#import <StartApp/STABannerSize.h>
+#import <StartApp/STAAdPreferences.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

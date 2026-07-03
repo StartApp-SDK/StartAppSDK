@@ -4,13 +4,13 @@
 //
 //  Created by StartApp on 01/25/22.
 //  Copyright (c) 2022 StartApp. All rights reserved.
-//  SDK version 4.13.1
+//  SDK version 4.14.0
 
 #import <Foundation/Foundation.h>
-#import "STABannerSize.h"
-#import "STAAdPreferences.h"
-#import "STABannerView.h"
-#import "STAInlineView.h"
+#import <StartApp/STABannerSize.h>
+#import <StartApp/STAAdPreferences.h>
+#import <StartApp/STABannerView.h>
+#import <StartApp/STAInlineView.h>
 
 #ifndef STABannerLoader_h
 #define STABannerLoader_h

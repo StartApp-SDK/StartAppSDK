@@ -4,10 +4,10 @@
 //
 //  Created by StartApp on 11/13/13.
 //  Copyright (c) 2013 StartApp. All rights reserved.
-//  SDK version 4.13.1
+//  SDK version 4.14.0
 
 
-#import "STABannerViewBase.h"
+#import <StartApp/STABannerViewBase.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

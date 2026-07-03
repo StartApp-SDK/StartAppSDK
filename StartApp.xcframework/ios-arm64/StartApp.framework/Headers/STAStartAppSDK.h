@@ -4,11 +4,11 @@
 //
 //  Created by StartApp on 3/13/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 4.13.1
+//  SDK version 4.14.0
 
 #import <Foundation/Foundation.h>
-#import "STAStartAppAd.h"
-#import "STASplashPreferences.h"
+#import <StartApp/STAStartAppAd.h>
+#import <StartApp/STASplashPreferences.h>
 
 
 typedef enum {
@@ -97,7 +97,15 @@ typedef enum {
  * @param devID Your Developer ID
  * @param appID Current Application ID
  */
-- (void)SDKInitialize:(NSString *)devID andAppID:(NSString *)appID;
+- (void)SDKInitialize:(NSString *)devID andAppID:(NSString *)appID DEPRECATED_MSG_ATTRIBUTE("Use initializeWithAppID:completion: instead");
+
+/*!
+ * @brief Initializes SDK with Application ID with completion block.
+ * @discussion Call this method to initialize the SDK. Pass a valid Application ID and a completion block to be notified when initialization completes.
+ * @param appID Current Application ID
+ * @param completion A block called when initialization completes, indicating success or failure.
+ */
+- (void)initializeWithAppID:(NSString *)appID completion:(void(^)(NSError *error))completion;
 
 /*!
  * @brief Adds/removes extra parameters to an ad request

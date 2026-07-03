@@ -6,63 +6,63 @@
 	<dict>
 		<key>Headers/STAAbstractAd.h</key>
 		<data>
-		1gNbexQcboC/9ebjjUCzL/b9b9w=
+		3ovIHXUfuBSsafLj53pH1ysL4lA=
 		</data>
 		<key>Headers/STAAdPreferences.h</key>
 		<data>
-		vwhY4UMzitFWnLwZvEVaNN1ro/4=
+		A4THK7U7XmcpcKWTpWpTpTD0iaM=
 		</data>
 		<key>Headers/STABannerLoader.h</key>
 		<data>
-		2MbLUDC4xwv5Tc+fj9qvFrcIjlY=
+		0+oYy/kIECmUvGHAYVTGLjMyXE4=
 		</data>
 		<key>Headers/STABannerSize.h</key>
 		<data>
-		CIpFDyH3U+pvJ2zZdCwzTrajnac=
+		tC/O6YF0Jvk6GSUTBLRCsvXRTvo=
 		</data>
 		<key>Headers/STABannerView.h</key>
 		<data>
-		8MAvxXwn6r/I+RbcwSoLEbL3pkw=
+		iAxxC4Gqb143nLmdBQzXO0NykjY=
 		</data>
 		<key>Headers/STABannerViewBase.h</key>
 		<data>
-		iBZFLyfxxB7raloRV6uKRJoc6pg=
+		2jB0DFVl4mE0LOtywultED+Rvx8=
 		</data>
 		<key>Headers/STAErrorCodes.h</key>
 		<data>
-		NaTRFWp4VFzsVO8q+PTPPEW+fLY=
+		iqwEH+jpwN/b3+bOl9c9wRKeq/I=
 		</data>
 		<key>Headers/STAInlineView.h</key>
 		<data>
-		OSztfg6egHoiWGRr3e8oH7/jrfU=
+		cxFUv+EIMNHFsxMiuPafJjoHr0I=
 		</data>
 		<key>Headers/STANativeAdDetails.h</key>
 		<data>
-		I0sgWgL85Ad+QDRDbffSCA/Q5EA=
+		h1ItlZ5TJbF9b4pFqkOaj0HTOS4=
 		</data>
 		<key>Headers/STASplashPreferences.h</key>
 		<data>
-		1JkxaYlOQOtKaPlRY6QqEu7Tw1g=
+		fnA84fY9vgMq7rXKHReByNnTB9E=
 		</data>
 		<key>Headers/STAStartAppAd.h</key>
 		<data>
-		ZnZswXMF/ald2MdkRV68CvNSnv8=
+		PNJi3pJ1I96N5O5OXw5xs9AHBKs=
 		</data>
 		<key>Headers/STAStartAppNativeAd.h</key>
 		<data>
-		GTZyhMKF5tkXr+buNS8/o0Rr/T4=
+		3Ck2wzXfkgsiHS4/po479mRsP3Y=
 		</data>
 		<key>Headers/STAStartAppSDK.h</key>
 		<data>
-		MEzZj7J0b5eclc1eKgVyXr2SaiY=
+		Lugj1JlR9x2P6V2djMSS7p87/Nw=
 		</data>
 		<key>Headers/StartApp.h</key>
 		<data>
-		Kj0cF7uzkL30Zzfn71Md/GuwBmI=
+		C/iqg66pNPcVH1+eHyg8QCSORdE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VwH7OkVFdPU/JnclRvnZnzzavgg=
+		QZnkZmYwd1cZMyNcV9WcgsRwiAE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,154 +83,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1gNbexQcboC/9ebjjUCzL/b9b9w=
+			3ovIHXUfuBSsafLj53pH1ysL4lA=
 			</data>
 			<key>hash2</key>
 			<data>
-			mv3/goVI7NtXHQbBDl+t52ad4h652sB5uJqiJ5Ozhao=
+			VTbWxa00f75pB2JyyK0njbVackNVMTy4FxnYkRDKcDM=
 			</data>
 		</dict>
 		<key>Headers/STAAdPreferences.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vwhY4UMzitFWnLwZvEVaNN1ro/4=
+			A4THK7U7XmcpcKWTpWpTpTD0iaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hu9a4Iz5wtEzsaz6564ztwaT/vBjAZEm1u0HB1ZMsWs=
+			zzb//k0f8LNVZOHKakHxl4totYd3Vu78Yr2J6GttLGg=
 			</data>
 		</dict>
 		<key>Headers/STABannerLoader.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2MbLUDC4xwv5Tc+fj9qvFrcIjlY=
+			0+oYy/kIECmUvGHAYVTGLjMyXE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			SVe+P41slRKpbzIOhh0kodj5xitgvHGQUroqCnoWii8=
+			AkAHWlJgwQPrH/PYd/9Cy9y+9qZ4UXfsxDMbqel5IWY=
 			</data>
 		</dict>
 		<key>Headers/STABannerSize.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CIpFDyH3U+pvJ2zZdCwzTrajnac=
+			tC/O6YF0Jvk6GSUTBLRCsvXRTvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			JLGycc5AG7MKbD/Cx4/nIl0jv3h/JqpXcizisu9uHvI=
+			QyWZ//VcAr899z77Br3mOTxTI43/zSwYjTECy/AtM60=
 			</data>
 		</dict>
 		<key>Headers/STABannerView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8MAvxXwn6r/I+RbcwSoLEbL3pkw=
+			iAxxC4Gqb143nLmdBQzXO0NykjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z6aH1yG4j3Fi7aFrZdjfpF73p52oNLW8e49e4ecp8so=
+			KXDgEk/EK/XASPnlfCeB5+4UbarnwpBTTS2b4pFOO4A=
 			</data>
 		</dict>
 		<key>Headers/STABannerViewBase.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iBZFLyfxxB7raloRV6uKRJoc6pg=
+			2jB0DFVl4mE0LOtywultED+Rvx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			nhMZUImimr7eev2xpvT72drhpfnKbe5oX31s/ZPBZTc=
+			mzIIN9uqvLi0i/9UXwx2tVafGCyTQeuSZ+W9VOYp1ls=
 			</data>
 		</dict>
 		<key>Headers/STAErrorCodes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NaTRFWp4VFzsVO8q+PTPPEW+fLY=
+			iqwEH+jpwN/b3+bOl9c9wRKeq/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			vt2gJ/1H97ja714rBGVuilfoaMDUepGq3T4hnUrFPbE=
+			Eio4Zdg3+xHhPdBqx1in/gANzxFOQ20D810es4gnioY=
 			</data>
 		</dict>
 		<key>Headers/STAInlineView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OSztfg6egHoiWGRr3e8oH7/jrfU=
+			cxFUv+EIMNHFsxMiuPafJjoHr0I=
 			</data>
 			<key>hash2</key>
 			<data>
-			FrVBm9y5avONYvx7O++d//WD9bcajiNDOu6CJqlnZdQ=
+			nYpyayScIOq9NbU7D3Tzp9AXY2N1g225MvSlchpDkgM=
 			</data>
 		</dict>
 		<key>Headers/STANativeAdDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0sgWgL85Ad+QDRDbffSCA/Q5EA=
+			h1ItlZ5TJbF9b4pFqkOaj0HTOS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			uY5XUOLrW6IYdWl4wEamaT0TrISmcKdV2c17ZsCrfaA=
+			Fza5SyA2a5PWM/9btBsAj8zGIC74x0qACW3RneNWeNk=
 			</data>
 		</dict>
 		<key>Headers/STASplashPreferences.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1JkxaYlOQOtKaPlRY6QqEu7Tw1g=
+			fnA84fY9vgMq7rXKHReByNnTB9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			3JzVLXfeIwtOnkfcMji7EHJNhRTcgrF9C8Av5wFdPf8=
+			Xu7GF/PwFvYmuHgy8FDnvLUcZt4TvHJAdtYbCPqzQPs=
 			</data>
 		</dict>
 		<key>Headers/STAStartAppAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZnZswXMF/ald2MdkRV68CvNSnv8=
+			PNJi3pJ1I96N5O5OXw5xs9AHBKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			3VUOSL0I2f6YZ8og/qJDFvv+xS6ITuUcOt1UEDj4zTE=
+			5C1z/QDb5wqm+mthoaYVfjAC5E44lvqGJc/ZtHuYafo=
 			</data>
 		</dict>
 		<key>Headers/STAStartAppNativeAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GTZyhMKF5tkXr+buNS8/o0Rr/T4=
+			3Ck2wzXfkgsiHS4/po479mRsP3Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nx7J7qpMTdVH5DbhuQpV64Fw60ghd/9YB5zjy4Wfhk0=
+			djsxBl4bFkwXoCPAIQxdhFWxUZRC6kPflY2A7g2d7Xo=
 			</data>
 		</dict>
 		<key>Headers/STAStartAppSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MEzZj7J0b5eclc1eKgVyXr2SaiY=
+			Lugj1JlR9x2P6V2djMSS7p87/Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9N2xDVEZlFOZ9ppfZnTa0MhNElEnOkddEahGiQBpyD8=
+			BkWM4J8bc7pNmvdzvAXqJ9OfFQ/i+qno4bwzngmc+NM=
 			</data>
 		</dict>
 		<key>Headers/StartApp.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kj0cF7uzkL30Zzfn71Md/GuwBmI=
+			C/iqg66pNPcVH1+eHyg8QCSORdE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ulMyDHsW4pO5xgqzK1NIFG1ySj+/7B8ibxoOLw6SFvA=
+			8m7cQEjTvAvXx5RBLhg6PRa5fRlIeovoD3t3n9G92ok=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
